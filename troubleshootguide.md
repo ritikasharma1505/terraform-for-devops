@@ -70,8 +70,9 @@ variable "root_volume_size" {
 }
 
 ```
-**in your aws_instance resource**
+*in your aws_instance resource*
 *Ensure the size is at least 8 (snapshot min). If you want a different default, change var.root_volume_size*
+
 Option A — use max (preferred)
 
 ```
@@ -94,3 +95,6 @@ root_block_device {
 ```
 
 If you prefer a simple one-line change, set volume_size = 8 directly.
+
+**NOTE:** 
+Always add public key, terraform state file in .gitignore 
