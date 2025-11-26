@@ -70,9 +70,9 @@ variable "root_volume_size" {
 }
 
 ```
-# in your aws_instance resource
-# ensure the size is at least 8 (snapshot min). If you want a different default, change var.root_volume_size
-Option A — use max correctly (preferred)
+**in your aws_instance resource**
+*Ensure the size is at least 8 (snapshot min). If you want a different default, change var.root_volume_size*
+Option A — use max (preferred)
 
 ```
 root_block_device {
